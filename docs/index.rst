@@ -156,7 +156,7 @@ What's in this module ?
 .. |Build status| image:: https://travis-ci.org/newslynx/newslynx-sc-twitter.svg
    :target: https://travis-ci.org/newslynx/newslynx-sc-twitter
 .. |Documentation Status| image:: https://readthedocs.org/projects/newslynx-sc-twitter/badge/?version=latest
-   :target: https://readthedocs.org/projects/newslynx-sc-twitter/?badge=latest
+   :target: http://newslynx-sc-twitter.readthedocs.org/
 
 Contents
 --------

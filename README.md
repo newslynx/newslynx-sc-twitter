@@ -1,4 +1,4 @@
-[![Build status](https://travis-ci.org/newslynx/newslynx-sc-twitter.svg)](https://travis-ci.org/newslynx/newslynx-sc-twitter) [![Documentation Status](https://readthedocs.org/projects/newslynx-sc-twitter/badge/?version=latest)](https://readthedocs.org/projects/newslynx-sc-twitter/?badge=latest)
+[![Build status](https://travis-ci.org/newslynx/newslynx-sc-twitter.svg)](https://travis-ci.org/newslynx/newslynx-sc-twitter) [![Documentation Status](https://readthedocs.org/projects/newslynx-sc-twitter/badge/?version=latest)](http://newslynx-sc-twitter.readthedocs.org/)
 
 newslynx-sc-twitter
 ==========================================================================================
