@@ -59,18 +59,6 @@ options:
             placeholder: "propalpatine | /.*prplp.tn.*/"
             description: The query we use for additional filtration on text and urls.
 
-    must_link:
-        input_type: checkbox-single
-        input_options:
-            - false
-        value_types:
-            - boolean
-        default: false
-        required: false
-        help:
-            placeholder: "false"
-            description: Only create an event if there is a link to an existing content item.
-
     min_followers:
         input_type: number
         value_types:
@@ -81,59 +69,3 @@ options:
         help:
             placeholder: "5000"
             description: Filter out tweets from users with less than X followers. 
-
-    event_status:
-        input_type: select
-        input_options:
-            - pending
-            - approved
-        value_types: 
-            - string
-        default: pending
-        help:
-            placeholder: "pending"
-
-    set_event_title:
-        input_type: text
-        value_types: 
-            - string
-        default: null
-        help:
-            placeholder: "Promotion Event"
-
-    set_event_description:
-        input_type: paragraph
-        value_types: 
-            - string
-        default: null
-
-    set_event_tag_ids:
-        input_type: checkbox
-        input_options: []
-        accepts_list: true 
-        value_types:
-            - string 
-            - numeric 
-        default: []
-        help:
-            description: |
-                A list of Tag IDs or slugs to automatically
-                apply to events created by this recipe.
-            placeholder: "pending"
-
-    set_event_content_items:
-        input_type: search
-        input_options: []
-        accepts_list: true 
-        value_types:
-            - json
-        default: []
-        help:
-            description: |
-                A list of Content Item IDs and Titles to automatically
-                apply to events created by this Recipe.
-            placeholder: "Search by content title..."
-
-
-
-

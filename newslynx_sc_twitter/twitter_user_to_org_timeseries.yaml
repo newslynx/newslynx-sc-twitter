@@ -2,7 +2,7 @@ slug: twitter-user-to-org-timeseries
 name: Twitter User Timeseries Metrics
 description: >
     Computes a timeseries of of metrics for one or more facebook pages.
-runs: newslynx.sc.metrics.twitter.UserMetrics
+runs: newslynx_sc_twitter.metrics.OrgTimeseries
 creates: metrics
 option_order: []
 options:
