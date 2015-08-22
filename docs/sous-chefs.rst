@@ -525,3 +525,95 @@ accepts the following
 
 
 
+Twitter User Timeseries Metrics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Computes a timeseries of of metrics for one or more facebook pages.
+-  This Sous Chef runs the python module
+   ``newslynx_sc_twitter.metrics.OrgTimeseries``.
+-  API Slug: ``twitter-user-to-org-timeseries``
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``twitter-user-to-org-timeseries`` and stream
+output. **NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml option=value1
+
+Alernatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml --recipe=recipe.yaml
+
+API Usage
+^^^^^^^^^
+
+Add this Sous Chef to your authenticated org
+
+.. code:: bash
+
+    $ newslynx api sous-chefs create -d=newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml
+
+Create a Recipe with this Sous Chef with command line options.
+
+.. code:: bash
+
+    $ newslynx api recipes create sous_chef=twitter-user-to-org-timeseries **options
+
+Alerternatively pass in a recipe file.
+
+.. code:: bash
+
+    $ newslynx api recipes create sous_chef=twitter-user-to-org-timeseries --data=recipe.yaml
+
+Save the outputted ``id`` of this recipe, and execute it via the API.
+**NOTE** This will place the recipe in a task queue.
+
+.. code:: bash
+
+    $ newslynx api recipes cook id=<id>
+
+Alernatively, run the Recipe, passing in arbitrary runtime options, and
+stream it's output: **NOTE** Will not execute the SousChef's ``load``
+method.
+
+.. code:: bash
+
+    $ newslynx api recipes cook id=<id> --passthrough **options
+
+Options
+^^^^^^^
+
+In addition to default recipe options,
+``twitter-user-to-org-timeseries`` also accepts the following
+
+-  ``screen_name``
+
+   -  **Required**
+   -  Should be rendered with a ``text`` form.
+   -  Accepts inputs of type:
+
+      -  ``string``
+
+Metrics
+^^^^^^^
+
+``twitter-user-to-org-timeseries`` generates the following Metrics
+
+-  ``twitter_followers``
+
+   -  Display name: ``Twitter Followers``
+
+   -  Type: ``cumulative``
+
+   -  Org Levels:
+
+      -  ``timeseries``
+      -  ``summary``
+
+
+
