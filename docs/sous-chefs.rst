@@ -11,22 +11,6 @@ Twitter List To Event
    ``newslynx_sc_twitter.events.List``.
 -  API Slug: ``twitter-list-to-event``
 
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``twitter-list-to-event`` and stream output.
-**NOTE** Will not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_list_to_event.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_list_to_event.yaml --recipe=recipe.yaml
-
 API Usage
 ^^^^^^^^^
 
@@ -62,6 +46,22 @@ method.
 .. code:: bash
 
     $ newslynx api recipes cook id=<id> --passthrough **options
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``twitter-list-to-event`` and stream output.
+**NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_list_to_event.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_list_to_event.yaml --recipe=recipe.yaml
 
 Options
 ^^^^^^^
@@ -209,23 +209,6 @@ Search For Links to Content Items
    ``newslynx_sc_twitter.events.SearchContentItemLinks``.
 -  API Slug: ``twitter-search-content-item-links-to-event``
 
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``twitter-search-content-item-links-to-event``
-and stream output. **NOTE** Will not execute the SousChef's ``load``
-method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_search_content_item_links_to_event.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_search_content_item_links_to_event.yaml --recipe=recipe.yaml
-
 API Usage
 ^^^^^^^^^
 
@@ -261,6 +244,23 @@ method.
 .. code:: bash
 
     $ newslynx api recipes cook id=<id> --passthrough **options
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``twitter-search-content-item-links-to-event``
+and stream output. **NOTE** Will not execute the SousChef's ``load``
+method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_search_content_item_links_to_event.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_search_content_item_links_to_event.yaml --recipe=recipe.yaml
 
 Options
 ^^^^^^^
@@ -368,22 +368,6 @@ Twitter Search To Event
    ``newslynx_sc_twitter.events.Search``.
 -  API Slug: ``twitter-search-to-event``
 
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``twitter-search-to-event`` and stream output.
-**NOTE** Will not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_search_to_event.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_search_to_event.yaml --recipe=recipe.yaml
-
 API Usage
 ^^^^^^^^^
 
@@ -419,6 +403,22 @@ method.
 .. code:: bash
 
     $ newslynx api recipes cook id=<id> --passthrough **options
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``twitter-search-to-event`` and stream output.
+**NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_search_to_event.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_search_to_event.yaml --recipe=recipe.yaml
 
 Options
 ^^^^^^^
@@ -497,22 +497,6 @@ Twitter User To Event
    ``newslynx_sc_twitter.events.User``.
 -  API Slug: ``twitter-user-to-event``
 
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``twitter-user-to-event`` and stream output.
-**NOTE** Will not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_user_to_event.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_user_to_event.yaml --recipe=recipe.yaml
-
 API Usage
 ^^^^^^^^^
 
@@ -549,6 +533,22 @@ method.
 
     $ newslynx api recipes cook id=<id> --passthrough **options
 
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``twitter-user-to-event`` and stream output.
+**NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_user_to_event.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_user_to_event.yaml --recipe=recipe.yaml
+
 Options
 ^^^^^^^
 
@@ -583,22 +583,6 @@ Twitter User Timeseries Metrics
 -  This Sous Chef runs the python module
    ``newslynx_sc_twitter.metrics.OrgTimeseries``.
 -  API Slug: ``twitter-user-to-org-timeseries``
-
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``twitter-user-to-org-timeseries`` and stream
-output. **NOTE** Will not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml --recipe=recipe.yaml
 
 API Usage
 ^^^^^^^^^
@@ -635,6 +619,22 @@ method.
 .. code:: bash
 
     $ newslynx api recipes cook id=<id> --passthrough **options
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``twitter-user-to-org-timeseries`` and stream
+output. **NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml --recipe=recipe.yaml
 
 Options
 ^^^^^^^
