@@ -1,4 +1,3 @@
 nose
 sphinx
 newslynx
-twython==3.3.0

@@ -3,9 +3,6 @@
 newslynx-sc-twitter
 ===================
 
-This module contains all Sous Chefs which deal with Twitter via
-\`twython\`.
-
 Installation
 ------------
 
@@ -25,8 +22,8 @@ Requires ``nose``
 
     $ nosetests
 
-Documenation
-------------
+Documentation
+-------------
 
 Documentation for ``newslynx-sc-twitter`` is hosted on `Read The
 Docs <http://newslynx-sc-twitter.readthedocs.org/>`__.
@@ -40,7 +37,7 @@ It's generated via the following steps
    documentation for all the Sous Chefs in ``newslynx-sc-twitter`` and
    saves the output to
    `docs/sous-chefs.rst <https://github.com/newslynx/newslynx-sc-twitter/blob/master/docs/sous-chefs.rst>`__
--  Builds Sphinx Documentaiton from these files.
+-  Builds Sphinx Documentation from these files.
 
 Continuous Integration
 ----------------------
@@ -79,7 +76,7 @@ What's in this module ?
 -  `setup.py <https://github.com/newslynx/newslynx-sc-twitter/blob/master/setup.py>`__
 
    -  Specification's for building ``newslynx-sc-twitter``'s PyPI
-      dsitribution.
+      distribution.
 
 -  `.travis.yml <https://github.com/newslynx/newslynx-sc-twitter/blob/master/.travis.yml>`__
 
