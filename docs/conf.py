@@ -190,69 +190,69 @@ htmlhelp_basename = 'newslynx-sc-twitterdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #'papersize': 'letterpaper',
+# latex_elements = {
+#     # The paper size ('letterpaper' or 'a4paper').
+#     #'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #'pointsize': '10pt',
+#     # The font size ('10pt', '11pt' or '12pt').
+#     #'pointsize': '10pt',
 
-    # Additional stuff for the LaTeX preamble.
-    #'preamble': '',
-}
+#     # Additional stuff for the LaTeX preamble.
+#     #'preamble': '',
+# }
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    ('index', 'newslynx-sc-twitter.tex', u'newslynx-sc-twitter Documentation',
-     u'Brian Abelson', 'manual'),
-]
+# # Grouping the document tree into LaTeX files. List of tuples
+# # (source start file, target name, title,
+# #  author, documentclass [howto, manual, or own class]).
+# latex_documents = [
+#     ('index', 'newslynx-sc-twitter.tex', u'newslynx-sc-twitter Documentation',
+#      u'Brian Abelson', 'manual'),
+# ]
 
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-#latex_logo = None
+# # The name of an image file (relative to this directory) to place at the top of
+# # the title page.
+# #latex_logo = None
 
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-#latex_use_parts = False
+# # For "manual" documents, if this is true, then toplevel headings are parts,
+# # not chapters.
+# #latex_use_parts = False
 
-# If true, show page references after internal links.
-#latex_show_pagerefs = False
+# # If true, show page references after internal links.
+# #latex_show_pagerefs = False
 
-# If true, show URL addresses after external links.
-#latex_show_urls = False
+# # If true, show URL addresses after external links.
+# #latex_show_urls = False
 
-# Documents to append as an appendix to all manuals.
-#latex_appendices = []
+# # Documents to append as an appendix to all manuals.
+# #latex_appendices = []
 
-# If false, no module index is generated.
-#latex_domain_indices = True
-
-
-# -- Options for manual page output ---------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'newslynx-sc-twitter', u'newslynx-sc-twitter Documentation',
-     [u'Brian Abelson'], 1)
-]
-
-# If true, show URL addresses after external links.
-#man_show_urls = False
+# # If false, no module index is generated.
+# #latex_domain_indices = True
 
 
-# -- Options for Texinfo output -------------------------------------------
+# # -- Options for manual page output ---------------------------------------
 
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    ('index', 'newslynx-sc-twitter', u'newslynx-sc-twitter Documentation',
-     u'Brian Abelson', 'newslynx-sc-twitter', 'This module contains all Sous Chefs which deal with Twitter via \`twython\`.',
-     'Miscellaneous'),
-]
+# # One entry per manual page. List of tuples
+# # (source start file, name, description, authors, manual section).
+# man_pages = [
+#     ('index', 'newslynx-sc-twitter', u'newslynx-sc-twitter Documentation',
+#      [u'Brian Abelson'], 1)
+# ]
+
+# # If true, show URL addresses after external links.
+# #man_show_urls = False
+
+
+# # -- Options for Texinfo output -------------------------------------------
+
+# # Grouping the document tree into Texinfo files. List of tuples
+# # (source start file, target name, title, author,
+# #  dir menu entry, description, category)
+# texinfo_documents = [
+#     ('index', 'newslynx-sc-twitter', u'newslynx-sc-twitter Documentation',
+#      u'Brian Abelson', 'newslynx-sc-twitter', 'This module contains all Sous Chefs which deal with Twitter via \`twython\`.',
+#      'Miscellaneous'),
+# ]
 
 # Documents to append as an appendix to all manuals.
 #texinfo_appendices = []
