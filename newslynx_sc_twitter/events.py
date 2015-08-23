@@ -7,6 +7,7 @@ from datetime import datetime
 from .common import Twitter
 from newslynx.sc import SousChef
 from newslynx.util import uniq
+from newslynx.exc import AuthError, RequestError
 
 
 class SCTwitterEvent(SousChef):
@@ -107,13 +108,13 @@ class SCTwitterEvent(SousChef):
         """
         tokens = self.auths.get('twitter', None)
         if not tokens:
-            raise Exception('This Sous Chef requires a Twitter Authorization.')
+            raise AuthError('This Sous Chef requires a Twitter Authorization.')
         self.twitter = Twitter()
         try:
             self.twitter.connect(**tokens)
         except Exception as e:
-            raise Exception(
-                'Error Connecting to Twitter: {}'.format(e.message))
+            raise AuthError('Error Connecting to Twitter: {}'
+                            .format(e.message))
 
     def run(self):
         """
@@ -218,7 +219,7 @@ class SearchContentItemLinks(SCTwitterEvent):
             q = '"{}" filter:links'.format(term)
             _queries.append(q)
         if not len(_queries):
-            raise Exception('This Org has no domain.')
+            raise RequestError('This Org has no domains.')
         return uniq(_queries)
 
     def fetch(self, **kw):

@@ -3,7 +3,6 @@ Sous Chefs
 -------------
 **newslynx-sc-twitter** provides access to the following Sous Chefs
 
-RUNS newslynx_sc_twitter.events.List
 Twitter List To Event
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -22,7 +21,7 @@ Pass runtime options to ``twitter-list-to-event`` and stream output.
 
     $ newslynx sc newslynx_sc_twitter/twitter_list_to_event.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -43,7 +42,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=twitter-list-to-event **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -56,7 +55,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
@@ -201,7 +200,6 @@ accepts the following
 
 
 
-RUNS newslynx_sc_twitter.events.SearchContentItemLinks
 Search For Links to Content Items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -222,7 +220,7 @@ method.
 
     $ newslynx sc newslynx_sc_twitter/twitter_search_content_item_links_to_event.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -243,7 +241,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=twitter-search-content-item-links-to-event **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -256,7 +254,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
@@ -362,7 +360,6 @@ following
 
 
 
-RUNS newslynx_sc_twitter.events.Search
 Twitter Search To Event
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -381,7 +378,7 @@ Pass runtime options to ``twitter-search-to-event`` and stream output.
 
     $ newslynx sc newslynx_sc_twitter/twitter_search_to_event.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -402,7 +399,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=twitter-search-to-event **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -415,7 +412,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
@@ -492,7 +489,6 @@ accepts the following
 
 
 
-RUNS newslynx_sc_twitter.events.User
 Twitter User To Event
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -511,7 +507,7 @@ Pass runtime options to ``twitter-user-to-event`` and stream output.
 
     $ newslynx sc newslynx_sc_twitter/twitter_user_to_event.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -532,7 +528,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=twitter-user-to-event **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -545,7 +541,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
@@ -580,7 +576,6 @@ accepts the following
 
 
 
-RUNS newslynx_sc_twitter.metrics.OrgTimeseries
 Twitter User Timeseries Metrics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -599,7 +594,7 @@ output. **NOTE** Will not execute the SousChef's ``load`` method.
 
     $ newslynx sc newslynx_sc_twitter/twitter_user_to_org_timeseries.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -620,7 +615,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=twitter-user-to-org-timeseries **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -633,7 +628,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
