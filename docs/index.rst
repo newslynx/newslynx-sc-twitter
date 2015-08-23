@@ -6,12 +6,43 @@ newslynx-sc-twitter
 Installation
 ------------
 
+Production
+~~~~~~~~~~
+
+To install ``newslynx-sc-twitter`` for an active installation of
+``newslynx-core``, clone it and copy into ``~/.newslynx/sous-chefs``
+
 .. code:: bash
 
-    $ mkvirtualenv newslynx-sc-twitter
     $ git clone https://github.com/newslynx/newslynx-sc-twitter.git
-    $ cd newslynx-sc-twitter
+    $ mv newslynx-sc-twitter/ ~/.newslynx/sous-chefs/
+
+Now install it within the same virtual environment as ``newslynx``:
+
+.. code:: bash
+
+    $ cd ~/.newslynx/sous-chefs/newslynx-sc-twitter/
     $ pip install .
+
+... and if you're running ``newslynx`` as ``sudo``
+
+.. code:: bash
+
+    $ cd ~/.newslynx/sous-chefs/newslynx-sc-twitter/ 
+    $ sudo pip install .
+
+Finally, run ``newslynx sc-sync`` to ``newslynx-sc-twitter``'s Sous
+Chefs for all organizations.
+
+.. code:: bash
+
+    $ newslynx sc-sync
+
+Development
+~~~~~~~~~~~
+
+If you want to run this SousChef on it's own environment, install it in
+a separate virutal environ
 
 Tests
 -----
@@ -20,7 +51,7 @@ Requires ``nose``
 
 .. code:: bash
 
-    $ nosetests
+    $ make all_tests
 
 Documentation
 -------------
