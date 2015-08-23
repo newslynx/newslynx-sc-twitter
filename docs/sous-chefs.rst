@@ -3,6 +3,7 @@ Sous Chefs
 -------------
 **newslynx-sc-twitter** provides access to the following Sous Chefs
 
+RUNS newslynx_sc_twitter.events.List
 Twitter List To Event
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -200,6 +201,7 @@ accepts the following
 
 
 
+RUNS newslynx_sc_twitter.events.SearchContentItemLinks
 Search For Links to Content Items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -360,6 +362,7 @@ following
 
 
 
+RUNS newslynx_sc_twitter.events.Search
 Twitter Search To Event
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -489,6 +492,7 @@ accepts the following
 
 
 
+RUNS newslynx_sc_twitter.events.User
 Twitter User To Event
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -576,6 +580,7 @@ accepts the following
 
 
 
+RUNS newslynx_sc_twitter.metrics.OrgTimeseries
 Twitter User Timeseries Metrics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
