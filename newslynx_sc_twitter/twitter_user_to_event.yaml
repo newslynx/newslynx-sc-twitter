@@ -20,6 +20,8 @@ option_order:
     - set_event_title
     - set_event_description
     - set_event_tag_ids
+includes: 
+    - _event_options.yaml
 options:
     
     screen_name:
