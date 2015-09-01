@@ -1,5 +1,6 @@
 nose
 sphinx
 newslynx
-twython
 gevent
+pytz
+twython

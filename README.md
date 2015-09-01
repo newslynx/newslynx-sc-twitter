@@ -9,29 +9,13 @@ newslynx-sc-twitter
 
 ### Production
 
-To install `newslynx-sc-twitter` for an active installation of `newslynx-core`, clone it and copy into `~/.newslynx/sous-chefs`
+To install `newslynx-sc-twitter` for an active installation of `newslynx-core`, run the following command:
 
 ```bash
-$ git clone https://github.com/newslynx/newslynx-sc-twitter.git
-$ mv newslynx-sc-twitter/ ~/.newslynx/sous-chefs/
+$ newslynx sc-install https://github.com/newslynx/newslynx-sc-twitter.git
 ```
 
-Now install it within the same virtual environment as `newslynx`:
-
-```bash
-$ cd ~/.newslynx/sous-chefs/newslynx-sc-twitter/
-$ pip install .
-```
-
-... and if you're running `newslynx` as `sudo`
-
-
-```bash
-$ cd ~/.newslynx/sous-chefs/newslynx-sc-twitter/ 
-$ sudo pip install .
-```
-
-Finally, run `newslynx sc-sync` to `newslynx-sc-twitter`'s Sous Chefs for all organizations.
+To add `newslynx-sc-twitter` all orgnaizations, run:
 
 ```bash
 $ newslynx sc-sync
@@ -39,12 +23,11 @@ $ newslynx sc-sync
 
 ### Development 
 
-If you want to modify / add Sous Chefs to `newslynx-sc-twitter`, instal it in it's own virtual environment.
+If you want to modify / add Sous Chefs to `newslynx-sc-twitter`, do the following:
 
 **NOTE** Will install a fresh version of `newslynx` via `pip`.
 
 ```bash
-$ mkvirtualenv newslynx-sc-twitter
 $ git clone https://github.com/newslynx/newslynx-sc-twitter.git
 $ cd newslynx-sc-twitter
 $ pip install --editable .
@@ -53,7 +36,7 @@ $ pip install --editable .
 You should now be able to run `newslynx-sc-twitter`'s Sous Chefs in development mode
 
 ```bash 
-% newslynx sc newslynx_sc_twitter/say_my_name.yaml --myname='Brian Abelson'
+% newslynx sc-run newslynx_sc_twitter/say_my_name.yaml --myname='Brian Abelson'
 ```
 
 ## Tests
