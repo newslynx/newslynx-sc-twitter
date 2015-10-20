@@ -27,7 +27,7 @@ class SCTwitterEvent(SousChef):
                 new.update(self._fmt(v))
             else:
                 if isinstance(v, list):
-                    v = ", ".join([str(vv) for vv in v])
+                    v = ", ".join([str(vv.decode('utf-8', errors='ignore') for vv in v])
                 elif isinstance(v, datetime):
                     v = v.date().isoformat()
                 new[k] = v
@@ -53,7 +53,8 @@ class SCTwitterEvent(SousChef):
 
         # search links or text.
         if self.options.get('search_query', None):
-            to_search = [tweet.get('body', ''), tweet.get('links', [])]
+            to_search = [tweet.get('body', '')]
+            to_search.extend(tweet.get('links', []))
             m = self.options['search_query'].match(to_search)
             tests.append(m)
 
