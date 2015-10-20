@@ -27,7 +27,7 @@ class SCTwitterEvent(SousChef):
                 new.update(self._fmt(v))
             else:
                 if isinstance(v, list):
-                    v = ", ".join([str(vv.decode('utf-8', errors='ignore') for vv in v])
+                    v = ", ".join([str(vv.decode('utf-8', errors='ignore')) for vv in v])
                 elif isinstance(v, datetime):
                     v = v.date().isoformat()
                 new[k] = v
