@@ -3,12 +3,15 @@ Twitter => Events.
 """
 from collections import defaultdict
 from datetime import datetime
+from unidecode import unidecode 
 
 from .common import Twitter
 from newslynx.sc import SousChef
 from newslynx.util import uniq
 from newslynx.exc import AuthError, RequestError
 
+def process_text(t):
+    return unicode(unidecode(t.decode('utf-8', errors='ignore')))
 
 class SCTwitterEvent(SousChef):
 
@@ -27,7 +30,7 @@ class SCTwitterEvent(SousChef):
                 new.update(self._fmt(v))
             else:
                 if isinstance(v, list):
-                    v = ", ".join([str(vv.decode('utf-8', errors='ignore')) for vv in v])
+                    v = ", ".join(v)
                 elif isinstance(v, datetime):
                     v = v.date().isoformat()
                 new[k] = v
